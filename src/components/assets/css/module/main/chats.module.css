@@ -1,0 +1,31 @@
+.chats {
+    display: none;
+  }
+
+.chated h2 {
+    font-weight: 700;
+    color: var(--fontAccrodion)
+}
+
+.chatSearch {
+    padding: 12px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 6px;
+}
+
+.chatSearchIcon {
+    font-size: 18px;
+    margin-top: 3px;
+    cursor: pointer;
+    color:rgb(54, 54, 54)
+}
+
+.chatSearch input {
+    font-size: 14px;
+    margin-left: 12px;
+    border: none !important;
+    outline: none !important;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    position: relative;
+}

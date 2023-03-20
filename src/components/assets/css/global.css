@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"]{
+  display: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav Tabs */
+.nav-tabs {
+  position: fixed;
+  bottom: 0;
+  /* border-right: 1px solid #c7c7c7; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  align-items: center;
+}
+.nav-tabs {
+  position: fixed;
+  bottom: 0;
+  /* border-right: 1px solid #c7c7c7; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  align-items: center;
+}
+
+.logBtn {
+  border: none;
+  outline: none;
+  color: #7269EF !important;
+}
+.nav-item button i{
+  font-size:18px
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  /* border-color: none !important; */
+  border: none;
+  outline: none;
+}
+
+.nav-link {
+  padding: 0px;
+  color: #7269EF !important;
+}
+
+.nav-link.active {
+  color: #646464 !important;
+}
+
+.nav-link button:hover {
+  border: none;
+  outline: none;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper .row {
+  margin: 0;
+  padding: 0;
+}
+
+
+.tab-content {
+  height: 100vh;
+  width: 100%;
+  float: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/* Responsive */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-tabs {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #c7c7c7;
+      border-top: none;
+      width: 4%;
+    }
+    .nav-tabs li button{
+      border: none;
+      outline: none;
+      margin: 25px 0px;
+      font-size: 23px;
+      color:#7269EF;
+    }
+    .wrapper {
+      height: 100% !important;
+      width: 100%;
+      float: left;
+      margin-left: 4%;
+    }
+
+    .tab-content {
+      height: 100vh;
+      width: 26%;
+      float: left;
+    }
+
+    .chats .tab-content {
+      width: 100%;
+    }
+
+    .tab-content ul {
+      list-style: none;
+    }
+
+    .tab-content ul li {
+      padding: 10px 0px;
+    }
+
+    .chats {
+      height: 100vh;
+      width: 74% !important;
+      float: left;
+      display: block;
+      border-left: 1px solid #c7c7c7;
+    }
+    .chatSearch input {
+      font-size: 15px;
+    }
+    .homeMobile {
+      display: none;
+    }
+
+    .homeDesktop {
+      display: block;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #ffffff; 
+    }
+
+  }
+  
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .nav-tabs {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #c7c7c7;
+      border-top: none;
+      width: 4%;
+    }
+    .nav-tabs li button{
+      border: none;
+      outline: none;
+      margin: 25px 0px;
+      font-size: 23px;
+      color:#7269EF;
+    }
+    .wrapper {
+      height: 100% !important;
+      width: 100%;
+      float: left;
+      margin-left: 4%;
+    }
+  
+    .tab-content {
+      height: 100vh;
+      width: 26%;
+      float: left;
+    }
+  
+    .chats .tab-content {
+      width: 100%;
+    }
+  
+    .tab-content ul {
+      list-style: none;
+    }
+  
+    .tab-content ul li {
+      padding: 10px 0px;
+    }
+  
+    .chats {
+      height: 100vh;
+      width: 74% !important;
+      float: left;
+      display: block;
+      border-left: 1px solid #c7c7c7;
+    }
+
+    .chatSearch input {
+      font-size: 16px;
+    }
+  
+    .homeMobile {
+      display: none;
+    }
+  
+    .homeDesktop {
+      display: block;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #ffffff; 
+    }
+  }

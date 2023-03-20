@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './components/assets/css/global.css';
+import Wrapper from './components/layout/Wrapper';
+import Login from './components/pages/Login';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Profile from './components/pages/Profile';
 function App() {
+//   useEffect(() => {
+//     const script=document.createElement('script');
+
+//     script.src="./components/assets/script/LoginScript.js";
+
+//     // return ()=>{
+//     //     document.body.removeChild(script);
+//     // }
+// }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={
+              <Wrapper> 
+                <Login />
+              </Wrapper>
+            }>
+          </Route>
+          <Route exact path="/profile" element={<Profile />}></Route>
+        </Routes>  
+      </Router>
     </div>
   );
 }
